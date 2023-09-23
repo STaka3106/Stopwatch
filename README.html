@@ -27,9 +27,12 @@
                 const now = new Date();
                 elapsed += now - pre;
                 pre = now;
-                console.log(elapsed);
             },10);
         });
+
+        reset.addEventListener('click', function(e)){
+            elapsed = 0;
+        }
     </script>
 </body>
 </html>
