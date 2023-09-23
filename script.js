@@ -22,6 +22,7 @@
      const ms = String(currentTime.getMilliseconds()).padStart(3, '0');
 
      time.textContent = `${hour}:${min}:${sec}.${ms}`;
+     // 小数点秒ごとにカウント表示
      timeoutID = setTimeout(displayTime, 10);
  }
 
