@@ -25,7 +25,7 @@ html, body {
     text-align: center;
     padding: 1rem;
     border-radius: 1rem;
-    box-shadow: 0 0 20px rgba(248, 239, 114, 0.25);
+    box-shadow: 0 0 20px rgba(105, 103, 66, 0.25);
     margin: .5rem;
   }
   
@@ -37,5 +37,5 @@ html, body {
   #start, #stop, #reset {
     font-size: 1.5rem;
     border-radius: .3rem;
-    box-shadow: 0 0 20px rgba(248, 239, 114, 0.25);
+    box-shadow: 0 0 20px rgba(105, 103, 66, 0.25);
   }
