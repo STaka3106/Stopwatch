@@ -22,7 +22,7 @@
      const ms = String(currentTime.getMilliseconds()).padStart(3, '0');
 
      time.textContent = `${hour}:${min}:${sec}.${ms}`;
-     timeoutID = setTimeout(displayTime, 1000);
+     timeoutID = setTimeout(displayTime, 10);
  }
 
  // スタートボタンクリック時、時間進行
