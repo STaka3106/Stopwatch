@@ -21,9 +21,7 @@
      const sec = String(currentTime.getSeconds()).padStart(2, '0');
      const ms = String(currentTime.getMilliseconds()).padStart(3, '0');
 
-     // 時間～小数点秒を順番に並べて表示
      time.textContent = `${hour}:${min}:${sec}.${ms}`;
-     // 
      timeoutID = setTimeout(displayTime, 10);
  }
 
