@@ -1,18 +1,18 @@
 html, body {
     font-family: 'Yomogi', cursive;
     font-size: 16px;
-    background-color: #FCE37A;
+    background-color: #EC6E67;
   }
   
   h1 {
-    color: #FB4B55;
+    color: #DFBA30;
     text-align: center;
     font-size: 2rem;
     margin: 3rem;
   }
   
   #container {
-    background-color: #FB4B55;
+    background-color: #DFBA30;
     width: 540px;
     border-radius: 1rem;
     margin: 0 auto;
@@ -20,7 +20,7 @@ html, body {
   }
   
   #time {
-    color: #FCE37A;
+    color: #EC6E67;
     font-size: 3rem;
     text-align: center;
     padding: 1rem;
