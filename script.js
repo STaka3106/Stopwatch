@@ -5,7 +5,7 @@
  const resetButton = document.getElementById('reset');
 
  // 開始時間
- let startTime = 0;
+ let startTime;
  // 停止時間
  let stopTime = 0;
  // タイムアウトID（時間停止時に使用）
@@ -16,13 +16,13 @@
      // 現在の時間
      const currentTime = new Date(Date.now() - startTime + stopTime);
      // 時間、分、秒、小数点秒を頭に0をつけて表示
-     const hour = String(currentTime.getHours() - 8).padStart(2, '0');
+     const hour = String(currentTime.getHours() - 1).padStart(2, '0');
      const min = String(currentTime.getMinutes()).padStart(2, '0');
      const sec = String(currentTime.getSeconds()).padStart(2, '0');
      const ms = String(currentTime.getMilliseconds()).padStart(3, '0');
 
      // 時間～小数点秒を順番に並べて表示
-     timeElement.innerHTML = `${hour}:${min}:${sec}.${ms}`;
+     time.textContent = `${hour}:${min}:${sec}.${ms}`;
      // 
      timeoutID = setTimeout(displayTime, 10);
  }
