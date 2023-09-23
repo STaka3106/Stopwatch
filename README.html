@@ -18,8 +18,17 @@
         const stop = document.getElementById('stop');
         const reset = document.getElementById('reset');
 
+        // 経過時間ミリ秒
+        let elapsed = 0;
+
         start.addEventListener('click', function(e){
-            console.log('hoge')
+            const pre = new Date();
+            setInterval(function(){
+                const now = new Date();
+                elapsed += now - pre;
+                pre = now;
+                console.log(elapsed);
+            },1000);
         });
     </script>
 </body>
