@@ -15,10 +15,10 @@
 
 ## 環境
 ●windows10<br>
-●Visual Studio Code バージョン：1.82.2
+●Visual Studio Code バージョン：1.82.2<br>
 
 ## 作成者
-STaka3106
+STaka3106<br>
 
 ## 参考サイト
-[【JavaScriptの実践】ストップウォッチの作り方](https://tcd-theme.com/2022/06/javascript-stopwatch.html)
+[【JavaScriptの実践】ストップウォッチの作り方](https://tcd-theme.com/2022/06/javascript-stopwatch.html)<br>
