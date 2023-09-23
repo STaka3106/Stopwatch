@@ -15,8 +15,9 @@
  function displayTime() {
      // 現在の時間
      const currentTime = new Date(Date.now() - startTime + stopTime);
+     console.log(Date.now);
      // 時間、分、秒、小数点秒を頭に0をつけて表示
-     const hour = String(currentTime.getHours() - 1).padStart(2, '0');
+     const hour = String(currentTime.getHours() - 9).padStart(2, '0');
      const min = String(currentTime.getMinutes()).padStart(2, '0');
      const sec = String(currentTime.getSeconds()).padStart(2, '0');
      const ms = String(currentTime.getMilliseconds()).padStart(3, '0');
