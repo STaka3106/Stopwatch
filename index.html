@@ -23,13 +23,27 @@
         
         let intervalId = null;
 
+        function updateTime() {
+            const ms = elapsed % 1000;
+            const sec = Math.floor(elapsed / 1000) % 60;
+            const min = Math.floor(elapsed / (1000*60)) % 60;
+            const hour = Math.floor(elapsed / (1000*60*60));
+
+            const msStr = ms.toString().padStart(3,'0');
+            const sStr = s.toString().padStart(2, '0');
+            const mStr = s.toString().padStart(2, '0');
+            const hStr = s.toString().padStart(2, '0');
+
+            timeElement.innerHTML = `${hStr}:${mStr}:${sStr}.${msStr}`;
+        }
+
         start.addEventListener('click', function(e){
             let pre = new Date();
-            intervalId = setInterval(function(){
+            intervalId = setInterval(function() {
                 const now = new Date();
                 elapsed += now - pre;
                 pre = now;
-                console.log(elapsed);
+                updateTime();
             },10);
         });
 
