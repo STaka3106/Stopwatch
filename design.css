@@ -5,14 +5,14 @@ html, body {
   }
   
   h1 {
-    color: #DFBA30;
+    color: #ffffff;
     text-align: center;
     font-size: 2rem;
     margin: 3rem;
   }
   
   #container {
-    background-color: #DFBA30;
+    background-color: #fadc71;
     width: 540px;
     border-radius: 1rem;
     margin: 0 auto;
