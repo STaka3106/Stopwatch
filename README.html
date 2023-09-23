@@ -20,15 +20,21 @@
 
         // 経過時間ミリ秒
         let elapsed = 0;
+        
+        let intervalId = null;
 
         start.addEventListener('click', function(e){
             let pre = new Date();
-            setInterval(function(){
+            intervalId = setInterval(function(){
                 const now = new Date();
                 elapsed += now - pre;
                 pre = now;
                 console.log(elapsed);
             },10);
+        });
+
+        stop.addEventListener('click', function(e){
+            clearInterval(intervalId);
         });
 
         reset.addEventListener('click', function(e){
