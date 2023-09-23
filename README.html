@@ -22,7 +22,7 @@
         let elapsed = 0;
 
         start.addEventListener('click', function(e){
-            const pre = new Date();
+            let pre = new Date();
             setInterval(function(){
                 const now = new Date();
                 elapsed += now - pre;
