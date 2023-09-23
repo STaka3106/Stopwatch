@@ -19,9 +19,8 @@
      const hour = String(currentTime.getHours() - 9).padStart(2, '0');
      const min = String(currentTime.getMinutes()).padStart(2, '0');
      const sec = String(currentTime.getSeconds()).padStart(2, '0');
-     const ms = String(currentTime.getMilliseconds()).padStart(3, '0');
 
-     time.textContent = `${hour}:${min}:${sec}.${ms}`;
+     time.textContent = `${hour}:${min}:${sec}`;
      // 小数点秒ごとにカウント表示
      timeoutID = setTimeout(displayTime, 10);
  }
@@ -55,7 +54,7 @@
      stopButton.disabled = true;
      resetButton.disabled = true;
      // カウント時間をリセット
-     time.textContent = '00:00:00.000';
+     time.textContent = '00:00:00';
      // 停止時間0
      stopTime = 0;
  });
