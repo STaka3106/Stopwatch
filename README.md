@@ -19,6 +19,3 @@
 
 ## 作成者
 STaka3106<br>
-
-## 参考サイト
-[【JavaScriptの実践】ストップウォッチの作り方](https://tcd-theme.com/2022/06/javascript-stopwatch.html)<br>
