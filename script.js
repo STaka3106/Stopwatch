@@ -56,6 +56,6 @@
      resetButton.disabled = true;
      // カウント時間をリセット
      time.textContent = '00:00:00.000';
-     // 停止時間0
+     // 停止時間0にリセット
      stopTime = 0;
  });
